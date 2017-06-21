@@ -8,17 +8,15 @@ Human Being in spare time.
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Jun 2017 00:29:11 -0700</pubDate>
-    <lastBuildDate>Wed, 21 Jun 2017 00:29:11 -0700</lastBuildDate>
+    <pubDate>Wed, 21 Jun 2017 00:46:26 -0700</pubDate>
+    <lastBuildDate>Wed, 21 Jun 2017 00:46:26 -0700</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
     
       <item>
         <title>Triage Prediction, for Fun and Profit</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;During my time with a previous employer, the issue of assigning team-level resposibility, or &lt;em&gt;triaging&lt;/em&gt;, was a central role in the engineering workflow, particularly among certain teams. Unfortunately and fortunately, my team was one of those lucky bunch which received a likely disproportionate share of PR’s incoming, yet ending elsewhere.&lt;/p&gt;
-&lt;/blockquote&gt;
+        <description>&lt;p&gt;During my time with a previous employer, the issue of assigning team-level resposibility, or &lt;em&gt;triaging&lt;/em&gt;, was a central role in the engineering workflow, particularly among certain teams. Unfortunately and fortunately, my team was one of those lucky bunch which received a likely disproportionate share of PR’s incoming, yet ending elsewhere.&lt;/p&gt;
 
-&lt;p&gt;Each team handles triaging&lt;/p&gt;
+&lt;p&gt;Each team handles triaging differently. In my team, we did round-robin on a monthly-basis. Having&lt;/p&gt;
 
 &lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
