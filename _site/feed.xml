@@ -1,7 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-06-20T23:17:26-07:00</updated><id>http://localhost:4000/</id><title type="html">Cory Pruce</title><subtitle>Machine Learning Software Engineer. 
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cory Pruce</title>
+    <description>Machine Learning Software Engineer. 
 Competitions Expert @ www.kaggle.com.
 Human Being in spare time.
-</subtitle><entry><title type="html">Triage Prediction, for Fun and Profit</title><link href="http://localhost:4000/machine/learning/data/science/bug/classification/svm/2017/06/19/triage-fun-profit.html" rel="alternate" type="text/html" title="Triage Prediction, for Fun and Profit" /><published>2017-06-19T13:38:00-07:00</published><updated>2017-06-19T13:38:00-07:00</updated><id>http://localhost:4000/machine/learning/data/science/bug/classification/svm/2017/06/19/triage-fun-profit</id><content type="html" xml:base="http://localhost:4000/machine/learning/data/science/bug/classification/svm/2017/06/19/triage-fun-profit.html">&lt;p&gt;During my time with a previous employer, the issue of assigning team-level resposibility, or &lt;code class=&quot;highlighter-rouge&quot;&gt;triaging&lt;/code&gt;, was a central role in the engineering workflow, particularly among certain teams. Unfortunately and fortunately, my team was one of those lucky bunch.&lt;/p&gt;
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 20 Jun 2017 23:34:42 -0700</pubDate>
+    <lastBuildDate>Tue, 20 Jun 2017 23:34:42 -0700</lastBuildDate>
+    <generator>Jekyll v3.5.0</generator>
+    
+      <item>
+        <title>Triage Prediction, for Fun and Profit</title>
+        <description>&lt;p&gt;During my time with a previous employer, the issue of assigning team-level resposibility, or &lt;code class=&quot;highlighter-rouge&quot;&gt;triaging&lt;/code&gt;, was a central role in the engineering workflow, particularly among certain teams. Unfortunately and fortunately, my team was one of those lucky bunch.&lt;/p&gt;
 
 &lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
@@ -15,4 +28,84 @@ Human Being in spare time.
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">During my time with a previous employer, the issue of assigning team-level resposibility, or triaging, was a central role in the engineering workflow, particularly among certain teams. Unfortunately and fortunately, my team was one of those lucky bunch.</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 19 Jun 2017 13:38:00 -0700</pubDate>
+        <link>http://localhost:4000/machine/learning/data/science/bug/classification/svm/2017/06/19/triage-fun-profit.html</link>
+        <guid isPermaLink="true">http://localhost:4000/machine/learning/data/science/bug/classification/svm/2017/06/19/triage-fun-profit.html</guid>
+        
+        
+        <category>Machine</category>
+        
+        <category>Learning</category>
+        
+        <category>Data</category>
+        
+        <category>Science</category>
+        
+        <category>Bug</category>
+        
+        <category>Classification</category>
+        
+        <category>SVM</category>
+        
+      </item>
+    
+      <item>
+        <title>Sample post</title>
+        <description>&lt;p&gt;This is what a post on your blog looks like. This template is especially well suited for posting nice succint blurbs, much like &lt;a href=&quot;http://sethgodin.typepad.com/&quot;&gt;Seth Godin&lt;/a&gt; does. Of course, it will also work well with longer posts, and you can change the number of posts per page in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file. There’s no guarentee this blog will make you write as well as he does, but it will present your writings in a beautiful, clean, and distraction-free way. Try to write a little bit, every day.&lt;/p&gt;
+
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Jan 2016 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2016/01/20/sample-post.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/01/20/sample-post.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>With nice formatting too...</title>
+        <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;list item&lt;/li&gt;
+  &lt;li&gt;list item&lt;/li&gt;
+  &lt;li&gt;list item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Plus &lt;strong&gt;bolding&lt;/strong&gt; and &lt;em&gt;italics&lt;/em&gt; and whatever else you want.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/adueck/cayman-blog/archive/master.zip&quot;&gt;Download this template&lt;/a&gt; or get it from the &lt;a href=&quot;https://github.com/adueck/cayman-blog&quot;&gt;GitHub repo&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 14 Jan 2016 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2016/01/14/blockquote-sample.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/01/14/blockquote-sample.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>And subtle sharing popups...</title>
+        <description>&lt;p&gt;Check out the share/permalink at the bottom of each post. This gives you a nice popup that allows people to share the specific post, using pure CSS. Okay, so there’s a weeee bit of js to allow for a ‘copy to clipboard’ button. But these sharing tools won’t bloat your page, or look obnoxious.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 12 Jan 2016 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2016/01/12/filler.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/01/12/filler.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
