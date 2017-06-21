@@ -75,6 +75,14 @@ a:hover {
           display: block;
           width: 100%; }}
 
+.yosemite-header {
+  background: #56687C url('../img/yosemite.jpg') no-repeat 50%;
+}
+
+.fox-header {
+  background: #56687C url('../img/fox.jpg') no-repeat 50%;
+}
+
 .page-header {
   color: #fff;
   text-align: center;
