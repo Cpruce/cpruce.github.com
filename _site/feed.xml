@@ -8,13 +8,17 @@ Human Being in spare time.
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Jun 2017 00:16:04 -0700</pubDate>
-    <lastBuildDate>Wed, 21 Jun 2017 00:16:04 -0700</lastBuildDate>
+    <pubDate>Wed, 21 Jun 2017 00:29:11 -0700</pubDate>
+    <lastBuildDate>Wed, 21 Jun 2017 00:29:11 -0700</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
     
       <item>
         <title>Triage Prediction, for Fun and Profit</title>
-        <description>&lt;p&gt;During my time with a previous employer, the issue of assigning team-level resposibility, or &lt;code class=&quot;highlighter-rouge&quot;&gt;triaging&lt;/code&gt;, was a central role in the engineering workflow, particularly among certain teams. Unfortunately and fortunately, my team was one of those lucky bunch.&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;During my time with a previous employer, the issue of assigning team-level resposibility, or &lt;em&gt;triaging&lt;/em&gt;, was a central role in the engineering workflow, particularly among certain teams. Unfortunately and fortunately, my team was one of those lucky bunch which received a likely disproportionate share of PR’s incoming, yet ending elsewhere.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Each team handles triaging&lt;/p&gt;
 
 &lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
@@ -67,9 +71,7 @@ Human Being in spare time.
     
       <item>
         <title>With nice formatting too...</title>
-        <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
-
-&lt;blockquote&gt;
+        <description>&lt;blockquote&gt;
   &lt;p&gt;“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -82,27 +84,10 @@ Human Being in spare time.
 &lt;/ul&gt;
 
 &lt;p&gt;Plus &lt;strong&gt;bolding&lt;/strong&gt; and &lt;em&gt;italics&lt;/em&gt; and whatever else you want.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/adueck/cayman-blog/archive/master.zip&quot;&gt;Download this template&lt;/a&gt; or get it from the &lt;a href=&quot;https://github.com/adueck/cayman-blog&quot;&gt;GitHub repo&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 14 Jan 2016 00:00:00 -0800</pubDate>
         <link>http://localhost:4000/2016/01/14/blockquote-sample.html</link>
         <guid isPermaLink="true">http://localhost:4000/2016/01/14/blockquote-sample.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>And subtle sharing popups...</title>
-        <description>&lt;p&gt;Check out the share/permalink at the bottom of each post. This gives you a nice popup that allows people to share the specific post, using pure CSS. Okay, so there’s a weeee bit of js to allow for a ‘copy to clipboard’ button. But these sharing tools won’t bloat your page, or look obnoxious.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
-
-&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 12 Jan 2016 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/2016/01/12/filler.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/01/12/filler.html</guid>
         
         
       </item>
