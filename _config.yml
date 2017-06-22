@@ -31,8 +31,8 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
-  - jekyll-paginate
-
+#  - jekyll-paginate
+#  - jekyll-scholar
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -44,4 +44,4 @@ gems:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-paginate: 10
+#paginate: 10
