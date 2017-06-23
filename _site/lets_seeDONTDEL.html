@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://localhost:4000/stylesheets/stylesheet.css">
+  <link rel="canonical" href="http://localhost:4000/lets_seeDONTDEL.html">
+  <link rel="stylesheet" href="http://localhost:4000/stylesheets/sharing-popup.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="alternate" type="application/rss+xml" title="Cory Pruce" href="http://localhost:4000/feed.xml">
+  <meta name="description" content="Machine Learning Software Engineer. 
+Competitions Expert @ www.kaggle.com.
+Human Being in spare time.
+">
+
+   <title>Triage Prediction, for Fun and Profit</title>
+
+
+
+</head>
+
+
+  <body>
+
+    <header class="page-header">
+     <h1 class="project-name"> <a class="header-link" href="/"> Cory Pruce</a></h1>
+     <h3><a class="header-link" href="http://github.com/cpruce" target="_blank">follow @cpruce</a></h3>
+</header>
+
+
+    <section class="main-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="main-content" itemprop="articleBody">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Triage Prediction, for Fun and Profit</h1>
+   <p class="post-meta"><time datetime="2017-06-19T13:38:00-07:00" itemprop="datePublished">Jun 19, 2017</time></p>
+  </header>
+
+    <p>During my time with a previous employer, the issue of assigning team-level responsibility, or <em>triaging</em>, was a central role in the engineering workflow, particularly among certain teams. Unfortunately and fortunately, my team was one of those lucky bunch which received a likely disproportionate share of PR’s incoming, yet ending elsewhere. I was even luckier in stumbling across an awesome opportunity.</p>
+
+<p><img src="/img/triage_post/bug.png" alt="Try not to get bogged down in bugs" /></p>
+
+<p>Each team handles triaging differently. In my team, we did round-robin on a monthly-basis. Having seen first-hand the <a href="http://ijesc.org/upload/de10a74ab9db0ac338a3466fc6574001.Auto%20Bug%20Triage%20a%20Need%20of%20Software%20Industry.pdf">lack of scale</a> to this process, heard of the request to automate the process, and being very into Data Science and Machine Learning, I felt I was the right one for the task.</p>
+
+<p>Right off-the-bat, I saw that I would structure the problem as a supervised, NLP problem. The ground truth would rest in the categories assigned to <em>closed</em>, <em>fixed</em> problem reports. The idea behind narrowing the set considered is to limit noise, ie. open PR’s are currently unsettled and mistaken can act as a red herring.</p>
+
+<p>Though I knew the problem was pervasive at large companies, I thought quantifying the data to show the potential impact would be best for the trajectory of the project. An anonymized version of my data analysis is available <a href="https://www.github.com/Cpruce/GNATS_Triage_Prediction/blob/master/triage_analysis.ipynb">here</a>. This analysis scopes out and highlights a typical use case of triaging in a large company, as well as the potential gains an automation of process would provide. If you use GNATS as a bug tracking system, congratulations! Maybe this will be of help. Don’t be afraid to reach out if so.</p>
+
+<p><img src="/img/triage_post/anon_plots.png" alt="" /></p>
+
+<p>Before entering into the spot checking phase, I was pretty sure that the process would take time, on the order of months. I had my LinearSVC with 5 recommendations hitting &gt;95% accuracy, precision, and recall after a week or two. The main takeaway should be don’t get discouraged. The library and community support today, especially with Python, is outstanding and it is easy to go from 0 to 60, real quick.</p>
+
+<blockquote>
+  <p>“Human beings are constantly learning and teaching with every social interaction, even with himself/herself.”</p>
+</blockquote>
+
+<p>Under the gun, I used a sledgehammer in feature engineering: simply stripping all special characters and using the synopsis only gave the best results. Due to the significant amount of parsing, I decided to leave the audit-trail alone. Further supporting this intuition, the description field turned out to be very noisy, which makes sense as the description is 9 times out of 10 significantly less succinct. That said, if extracted and selected properly, there lie valuable information that can be built upon. Bigrams did give another boost, leaving trigrams with little room for improvement. Using feature extraction algorithms like PCA and <a href="http://ieeexplore.ieee.org/abstract/document/5298419/citations?tabFilter=papers">LSA</a> to remove correlation/redundancy definitely should be explored too. I’d also tried <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.91.6144&amp;rep=rep1&amp;type=pdf">stemming</a> with little or no visible gain.</p>
+
+<p>Check out the <a href="">pipeline</a> on Github.</p>
+
+<p>Trying a few pre-packaged feature extractors/selectors from scikit-learn, I found that using the Term Frequency-Inverse Document Frequency Vectorizer (<code class="highlighter-rouge">TfidfVectorizer</code>) and removing English stop words compiled in the sklearn module gave pretty good results.</p>
+
+<p>Other models such as Neural Networks and KNN should be explored too. Incorporating those two into the bag of tools would help maximize the breadth of types of models used. This will help gauge Occam’s Razor as well: if two solutions are equally performant, pick the simpler one. This can be mathematically formulated as <em>min(complexity) + min(error) = max(simplicity) + max(correctness)</em>. This doesn’t need to always be explicitly stated, but it is good to consider.</p>
+
+<p>The ML <a href="https://www.researchgate.net/publication/308417176_Automated_Bug_Triaging_in_an_Industrial_Context">models</a> that I ended up comparing were <code class="highlighter-rouge">MultinomialNB</code>, <code class="highlighter-rouge">RandomForestClassifier</code>, <code class="highlighter-rouge">LogisticRegression</code>, and <code class="highlighter-rouge">LinearSVC</code>.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Throughout my analysis and construction of the pipeline, there were tradeoffs I needed to consider, many of which I have not touched upon in the post and writeups. To name a few:</p>
+
+<ul>
+  <li><strong>Number of Recommendations</strong>: In order to maximize model robustness without diminishing user experience, I felt 5 recommendations was a good number to optimize this objective. This intuition was supported by the <a href="http://www.ml.uni-saarland.de/Publications/LapHeiSch-TopkMulticlassSVM2015.pdf">Top-k Multiclass SVM</a> paper. Analysis of this decision will be shown by user interaction.</li>
+  <li><strong>New/old Features</strong>: New features that haven’t been seen before are essentially as good as random guessing. For convenience, I started with batch learning. However, OnlineSVM can be used to improve everyday, or however granular one would like.</li>
+  <li><strong>Quality of Data</strong>: Not all synopses are descriptive. Worse, not all data is reliable. Additionally, the Description field is noisy and yields little or no error reduction. There is certainly good information there. Two next steps are proper feature engineering of the Description field in order to extract the relevant information as well as filtering/correcting labels.</li>
+  <li><strong>Depth of Problems</strong>: Some classifications are just inherently difficult. If the data is small, doesn’t contain characteristic features, and/or describes a symptom that could have multiple origins, the classifier may become uncertain. This is part of the machine learning problems understanding. There is bound to be some error, which is desired to be minimized.</li>
+  <li><strong>Level of Automation</strong>: I chose to give recommendations, in order to give way to an engineer confident in the category. I also got the bright idea to take a page out of search engines’ books and thought it would just be a cool way to get better results as well =).</li>
+  <li><strong>Algorithms/Techniques Decision</strong>: Given the data I had, the problem at hand, and the tools at my disposal, I looked for the combination that gave the most satisfactory results within a short amount of time. Other approaches such PCA, Neural Networks, and LSA should certainly be explored in order to maximize effectiveness.</li>
+</ul>
+
+
+  </div>
+
+<a href="http://localhost:4000"><h3 style="text-align: center;">- to blog -</h3></a>
+
+</article>
+
+      </div>
+    </div>
+
+    <p style="font-size: 60%; text-align: right;"></p>
+
+
+
+  </body>
+
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+<script>
+var clipboard = new Clipboard('.share-btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script>
+
+
+</html>
