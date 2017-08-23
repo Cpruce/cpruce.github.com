@@ -1,4 +1,8 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
+
+# Self-hosting
+#gem "jekyll-theme-cayman-blog"
+
 #gem 'github-pages'
 #gem 'jekyll-paginate'
 # Hello! This is where you manage which Jekyll version is used to run.
@@ -23,7 +27,9 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
 end
 
+gem 'jekyll-seo-tag'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-source 'https://rubygems.org'
 
+gemspec
