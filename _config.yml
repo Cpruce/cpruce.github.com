@@ -15,7 +15,7 @@ cpruce-blog: #cayman-blog:
   date_format: "%b %-d, %Y"
 
 theme: # leave it empty
-
+redirects: yes
 # social
 author: "Cory Pruce"
 image: /img/cover.png 

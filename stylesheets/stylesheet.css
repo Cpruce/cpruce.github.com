@@ -288,7 +288,10 @@ a:hover {
   .site-footer {
     font-size: 0.9rem; } }
 
-
+.center-image
+{
+    padding-left: 150rem;
+    display: block;
 }
 
 .post-meta {

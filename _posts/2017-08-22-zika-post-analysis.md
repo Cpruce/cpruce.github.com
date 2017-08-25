@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Zika Post IDA"
+title: "Zika IDA"
+tagline: Freedom of Press, for Better and for Worse 
 ---
 
-https://github.com/Cpruce/Notebooks/blob/master/ZikaDataAnalysis.ipynb
-
-
-<!--![https://assets-cdn.github.com/images/icons/emoji/octocat.png](https://assets-cdn.github.com/images/icons/emoji/octocat.png) -->
+![Zika](/assets/map.png){: .center-image }
+[View Analysis](https://github.com/Cpruce/Notebooks/blob/master/ZikaDataAnalysis.ipynb)  
