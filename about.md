@@ -2,6 +2,7 @@
 layout: page
 title: About
 tagline: Want to learn more?  
+image: page
 permalink: /about.html
 ---
 

@@ -1,4 +1,4 @@
-title: Cory Pruce # Pruce Systems #  
+title: Pruce Systems # Pruce Systems #  
 description: # > # this means to ignore newlines until "baseurl:"
   Data Science/Machine Learning/Software Engineering 
 show_downloads: true
@@ -18,7 +18,7 @@ theme: # leave it empty
 redirects: yes
 # social
 author: "Cory Pruce"
-image: /img/cover.png 
+image:  
 github:
   username: Cpruce
   owner_name: Cory

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact
+image: page
 tagline: Share your thoughts  
 ---
 

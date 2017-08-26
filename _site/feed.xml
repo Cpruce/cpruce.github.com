@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cory Pruce</title>
+    <title>Pruce Systems</title>
     <description>Data Science/Machine Learning/Software Engineering</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 24 Aug 2017 23:34:22 -0700</pubDate>
-    <lastBuildDate>Thu, 24 Aug 2017 23:34:22 -0700</lastBuildDate>
+    <pubDate>Sat, 26 Aug 2017 07:59:53 -0700</pubDate>
+    <lastBuildDate>Sat, 26 Aug 2017 07:59:53 -0700</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
     
       <item>
@@ -39,7 +39,7 @@ Streams have been around for sometime. The Rolling Average and Maximum have seve
       </item>
     
       <item>
-        <title>Zika IDA</title>
+        <title>Zika Initial Data Analysis</title>
         <description>&lt;p&gt;&lt;img src=&quot;/assets/map.png&quot; alt=&quot;Zika&quot; class=&quot;center-image&quot; /&gt;
 &lt;a href=&quot;https://github.com/Cpruce/Notebooks/blob/master/ZikaDataAnalysis.ipynb&quot;&gt;View Analysis&lt;/a&gt;&lt;/p&gt;
 </description>

@@ -52,8 +52,20 @@
     {% if page.layout == 'post' %}
       {% assign page-tagline = page.tagline | escape  %}
     {% endif %}
+    
+    
+    {% if page.image == 'page' %}
+        {% assign page-header = page.image | escape %}
+    {% endif %}
+    {% if page.image == 'amazon' %}
+        {% assign page-header = page.image | escape %}
+    {% endif %}
+    {% if page.image == 'clouds' %}
+        {% assign page-header = page.image | escape %}
+    {% endif %}
+ 
 
-    <section class="page-header">
+    <section class="{{ page.image }}-header">
       <h1 class="project-name">{{ page-title }}</h1>
       <h2 class="project-tagline">{{ page-tagline }}</h2>
       {% if page.layout == 'home' and site.github.is_project_page %}

@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Zika IDA"
+title: "Zika Initial Data Analysis"
 tagline: Freedom of Press, for Better and for Worse 
+image: clouds 
 ---
 
 ![Zika](/assets/map.png){: .center-image }
