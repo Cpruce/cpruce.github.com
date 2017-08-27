@@ -11,7 +11,7 @@ meta: "Machine Learning, Data Science, Image Recognition, Kaggle, Semantic Segme
 
 ## It Depends
 
-The above is half-joking, half-serious. The underlying notion is that there exists a large intersection between data science and the life sciences.
+The above is half-joking, half-serious. The underlying notion is there exists a large intersection between data science and the life sciences.
 
 Early in 2017, Kaggle, Intel, and MobileODT released a cervical cancer screening competition. The goal of the challenge was to identify which type of cervix was present given an image. In classifying cervix type correctly, doctors can prescribe the appropriate treatment for cancer, thus further mitigating future risk. 
 
@@ -19,7 +19,7 @@ Early in 2017, Kaggle, Intel, and MobileODT released a cervical cancer screening
 
 > Especially in rural parts of the world, many women at high risk for cervical cancer are receiving treatment that will not work for them due to the position of their cervix. This is a tragedy: health providers are able to identify high risk patients, but may not have the skills to reliably discern which treatment which will prevent cancer in these women. Even worse, applying the wrong treatment has a high cost. A treatment which works effectively for one woman may obscure future cancerous growth in another woman, greatly increasing health risks. 
 
-When looking at the data, one of the first things I noticed, besides not being the nicest of images, is that most of the photos had irrelevant information. For example, many either had black borders around the content or the instrument and other parts were present in the image. These additional object simply decrease the signal-to-noise ratio and thus convolute any predictions from a model learned from noisy data. 
+When looking at the data, one of the first things I noticed is that most of the photos had irrelevant information. For example, many either had black borders around the content or the instrument and other parts were present in the image. These additional object simply decrease the signal-to-noise ratio and thus convolute any predictions from a model learned from noisy data. 
 
 My idea was to create a smart crop in order to reduce the amount of irrelevant information learned from. Technically, with deep learning, we could supply more and more data combined with building bigger and bigger networks to perform the proper feature extraction, nullifying the bias-variance tradeoff. However, we don't have that luxury here, though a good network should be able to extract a lot of relevant information. Of the higher-level features that can be constructed from the images, I believe the curvature yields the most information in predicting what type of cervix is in the image.
 
